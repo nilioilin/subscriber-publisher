@@ -3,12 +3,19 @@
 
 #include <QObject>
 #include <QWidget>
+#include "messagebroker.h"
 
-class Publish
+class Publish : public QObject
 {
     Q_OBJECT
+
 public:
-    Publish();
+    explicit Publish(MessageBroker *broker = nullptr);
+
+    void add_message(QString &topic_name, QString &message);
+
+private:
+    MessageBroker *broker;
 };
 
 #endif // PUBLISH_H
