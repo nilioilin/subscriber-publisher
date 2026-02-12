@@ -11,7 +11,7 @@ class Subscribe : public QObject
     Q_OBJECT
 public:
     explicit Subscribe(
-        QObject *parent = nullptr, MessageBroker* broker= nullptr);
+        QObject *parent = nullptr, MessageBroker *broker= nullptr);
 
     QString get_message(QString &topic_name);
     void subscribe(QString &topic_name);
