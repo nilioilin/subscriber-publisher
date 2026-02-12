@@ -2,7 +2,7 @@
 #define TOPIC_H
 
 #include <QString>
-#include <QList>
+#include <QQueue>
 #include <QMap>
 
 class Subscribe;
@@ -10,11 +10,9 @@ class Subscribe;
 struct Topic
 {
     QString name;
-    QString message;
+    QQueue <QString> messages;
     QMap <Subscribe, QString> reaction;
     QList<Subscribe> subscribers;
-
-
 };
 
 #endif // TOPIC_H
