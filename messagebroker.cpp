@@ -11,7 +11,7 @@ MessageBroker::MessageBroker(QObject* parent)
 }
 
 
-Topic* MessageBroker::search_topic(QString topic_name)
+Topic* MessageBroker::search_topic(const QString topic_name)
 {
     auto it = topics.find(topic_name);
     if (it != topics.end())
@@ -20,7 +20,7 @@ Topic* MessageBroker::search_topic(QString topic_name)
 }
 
 
-void MessageBroker::add_topic(QString &topic_name)
+void MessageBroker::add_topic(const QString &topic_name)
 {
     if(topics.contains(topic_name)){
         return;
@@ -28,12 +28,12 @@ void MessageBroker::add_topic(QString &topic_name)
     else{
         Topic topic;
         topic.name = topic_name;
-        topics.insert("topic_name", topic);
+        topics.insert(topic_name, topic);
     }
 }
 
 
-void MessageBroker::publish_message(QString &topic_name, QString &message)
+void MessageBroker::publish_message(const QString &topic_name, QString &message)
 {
     Topic *topic = search_topic(topic_name);
     if(topic){
@@ -42,17 +42,18 @@ void MessageBroker::publish_message(QString &topic_name, QString &message)
 }
 
 
-QString MessageBroker::get_message(QString &topic_name)
+QString MessageBroker::get_message(const QString &topic_name)
 {
     Topic *topic = search_topic(topic_name);
-    if(topic){
-        topic->messages.dequeue();
+    if(topic && !topic->messages.isEmpty()){
+        return topic->messages.dequeue();
     }
     return QString();
 }
 
 
-void MessageBroker::subscribe(QString &topic_name, Subscribe *subscriber){
+
+void MessageBroker::subscribe(const QString &topic_name, Subscribe *subscriber){
     Topic *topic = search_topic(topic_name);
     if(topic){
         topic->subscribers.append(subscriber);
@@ -60,7 +61,7 @@ void MessageBroker::subscribe(QString &topic_name, Subscribe *subscriber){
 }
 
 
-void MessageBroker::add_reaction(QString &topic_name, QString &reaction, Subscribe *subscriber)
+void MessageBroker::add_reaction(const QString &topic_name, QString &reaction, Subscribe *subscriber)
 {
     Topic *topic = search_topic(topic_name);
     if(topic){

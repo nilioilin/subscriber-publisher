@@ -5,7 +5,7 @@ Publish::Publish(MessageBroker *broker)
 
 }
 
-void Publish::add_message(QString &topic_name, QString &message)
+void Publish::add_message(const QString &topic_name, QString &message)
 {
     broker -> publish_message(topic_name, message);
 }

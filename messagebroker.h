@@ -12,17 +12,18 @@ class MessageBroker : public QObject
 public:
     explicit MessageBroker(QObject *parent = nullptr);
 
-    void add_topic(QString &topic_name);
+    Topic* search_topic(const QString topic_name);
 
-    void publish_message(QString &topic_name, QString &message);
+    void add_topic(const QString &topic_name);
 
-    QString get_message(QString &topic_name);
-    void subscribe(QString &topic_name, Subscribe *subscriber);
-    void add_reaction(QString &topic_name, QString &reaction, Subscribe *subscriber);
+    void publish_message(const QString &topic_name, QString &message);
+
+    QString get_message(const QString &topic_name);
+    void subscribe(const QString &topic_name, Subscribe *subscriber);
+    void add_reaction(const QString &topic_name, QString &reaction, Subscribe *subscriber);
 
 private:
     QHash<QString, Topic> topics;
-    Topic* search_topic(QString topic_name);
 
 };
 

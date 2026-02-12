@@ -12,7 +12,7 @@ class Publish : public QObject
 public:
     explicit Publish(MessageBroker *broker = nullptr);
 
-    void add_message(QString &topic_name, QString &message);
+    void add_message(const QString &topic_name, QString &message);
 
 private:
     MessageBroker *broker;

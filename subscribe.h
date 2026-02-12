@@ -10,12 +10,11 @@ class Subscribe : public QObject
 {
     Q_OBJECT
 public:
-    explicit Subscribe(
-        QObject *parent = nullptr, MessageBroker *broker= nullptr);
+    explicit Subscribe(MessageBroker *broker= nullptr);
 
-    QString get_message(QString &topic_name);
-    void subscribe(QString &topic_name);
-    void add_reaction(QString &topic_name, QString &reaction);
+    QString get_message(const QString &topic_name);
+    void subscribe(const QString &topic_name);
+    void add_reaction(const QString &topic_name, QString &reaction);
 
 private:
         MessageBroker *broker;
