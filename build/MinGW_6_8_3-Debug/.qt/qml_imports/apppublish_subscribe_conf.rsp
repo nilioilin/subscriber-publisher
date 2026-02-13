@@ -1,0 +1,14 @@
+-rootPath
+E:/publish-subscribe/publish_subscribe
+-cmake-output
+-output-file
+E:/publish-subscribe/publish_subscribe/build/MinGW_6_8_3-Debug/.qt/qml_imports/apppublish_subscribe_conf.cmake
+-importPath
+E:/publish-subscribe/publish_subscribe/build/MinGW_6_8_3-Debug/publish_subscribe
+-importPath
+E:/publish-subscribe/publish_subscribe/build/MinGW_6_8_3-Debug
+-importPath
+C:/Qt/6.8.3/mingw_64/qml
+-qrcFiles
+E:/publish-subscribe/publish_subscribe/build/MinGW_6_8_3-Debug/.qt/rcc/qmake_publish_subscribe.qrc
+E:/publish-subscribe/publish_subscribe/build/MinGW_6_8_3-Debug/.qt/rcc/apppublish_subscribe_raw_qml_0.qrc

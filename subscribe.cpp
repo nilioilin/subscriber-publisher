@@ -1,5 +1,8 @@
 #include "subscribe.h"
+#include "messagebroker.h"
 #include <QString>
+#include <QDebug>
+
 
 Subscribe::Subscribe(MessageBroker *broker)
     :broker(broker) {
@@ -16,4 +19,8 @@ void Subscribe::subscribe(const QString &topic_name){
 
 void Subscribe::add_reaction(const QString &topic_name, QString &reaction){
     broker -> add_reaction(topic_name,  reaction, this);
+}
+
+void Subscribe::Message(const QString &topic_name, QString &message){
+    qInfo() << "new message";
 }

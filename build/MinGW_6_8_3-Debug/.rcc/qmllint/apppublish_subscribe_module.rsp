@@ -1,0 +1,10 @@
+-I
+E:/publish-subscribe/publish_subscribe/build/MinGW_6_8_3-Debug
+-I
+C:/Qt/6.8.3/mingw_64/qml
+--resource
+E:/publish-subscribe/publish_subscribe/build/MinGW_6_8_3-Debug/.qt/rcc/qmake_publish_subscribe.qrc
+--resource
+E:/publish-subscribe/publish_subscribe/build/MinGW_6_8_3-Debug/.qt/rcc/apppublish_subscribe_raw_qml_0.qrc
+--module
+publish_subscribe

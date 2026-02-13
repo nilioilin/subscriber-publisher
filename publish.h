@@ -16,6 +16,8 @@ public:
 
 private:
     MessageBroker *broker;
+
+signals:
 };
 
 #endif // PUBLISH_H

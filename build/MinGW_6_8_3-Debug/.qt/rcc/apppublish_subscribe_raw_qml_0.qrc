@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/publish_subscribe/">
+    <file alias="Main.qml">E:/publish-subscribe/publish_subscribe/Main.qml</file>
+  </qresource>
+</RCC>
+

@@ -1,0 +1,56 @@
+[
+    {
+        "classes": [
+            {
+                "className": "MessageBroker",
+                "lineNumber": 9,
+                "object": true,
+                "qualifiedClassName": "MessageBroker",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "messagebroker.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "Publish",
+                "lineNumber": 8,
+                "object": true,
+                "qualifiedClassName": "Publish",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "publish.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "Subscribe",
+                "lineNumber": 9,
+                "object": true,
+                "qualifiedClassName": "Subscribe",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "subscribe.h",
+        "outputRevision": 68
+    }
+]

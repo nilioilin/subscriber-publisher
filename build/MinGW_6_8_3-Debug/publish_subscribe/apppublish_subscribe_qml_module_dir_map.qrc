@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/publish_subscribe">E:/publish-subscribe/publish_subscribe/build/MinGW_6_8_3-Debug/publish_subscribe</file>
+
+  </qresource>
+</RCC>

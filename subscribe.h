@@ -18,6 +18,9 @@ public:
 
 private:
         MessageBroker *broker;
+
+public slots:
+        void Message(const QString &topic_name, QString &message);
 };
 
 #endif // SUBSCRIBE_H

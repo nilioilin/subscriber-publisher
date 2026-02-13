@@ -39,6 +39,8 @@ void MessageBroker::publish_message(const QString &topic_name, QString &message)
     if(topic){
         topic->messages.enqueue(message);
     }
+
+    emit Message(topic_name, message);
 }
 
 
@@ -58,6 +60,7 @@ void MessageBroker::subscribe(const QString &topic_name, Subscribe *subscriber){
     if(topic){
         topic->subscribers.append(subscriber);
     }
+    connect(this, &MessageBroker::Message, subscriber, &Subscribe::Message);
 }
 
 

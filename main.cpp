@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     qInfo() << "ok";
-
+    //test methods
     MessageBroker broker;
     Publish poblish(&broker);
     Subscribe temperture(&broker);
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
     qInfo() << temp;
 
     qInfo() << topic->name;
-
+    //
 
     return app.exec();
 }

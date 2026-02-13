@@ -25,6 +25,9 @@ public:
 private:
     QHash<QString, Topic> topics;
 
+signals:
+    void Message(const QString &topic_name, QString &message);
+
 };
 
 #endif // MESSAGEBROKER_H

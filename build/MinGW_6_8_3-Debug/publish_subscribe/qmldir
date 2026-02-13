@@ -1,0 +1,5 @@
+module publish_subscribe
+typeinfo apppublish_subscribe.qmltypes
+prefer :/qt/qml/publish_subscribe/
+Main 1.0 Main.qml
+

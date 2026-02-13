@@ -1,0 +1,3 @@
+set(__QT_DEPLOY_TARGET_apppublish_subscribe_FILE E:/publish-subscribe/publish_subscribe/build/MinGW_6_8_3-Debug/apppublish_subscribe.exe)
+set(__QT_DEPLOY_TARGET_apppublish_subscribe_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_apppublish_subscribe_RUNTIME_DLLS C:/Qt/6.8.3/mingw_64/bin/Qt6Quick.dll;C:/Qt/6.8.3/mingw_64/bin/Qt6Widgets.dll;C:/Qt/6.8.3/mingw_64/bin/Qt6QmlMeta.dll;C:/Qt/6.8.3/mingw_64/bin/Qt6QmlWorkerScript.dll;C:/Qt/6.8.3/mingw_64/bin/Qt6QmlModels.dll;C:/Qt/6.8.3/mingw_64/bin/Qt6Qml.dll;C:/Qt/6.8.3/mingw_64/bin/Qt6Network.dll;C:/Qt/6.8.3/mingw_64/bin/Qt6OpenGL.dll;C:/Qt/6.8.3/mingw_64/bin/Qt6Gui.dll;C:/Qt/6.8.3/mingw_64/bin/Qt6Core.dll)
